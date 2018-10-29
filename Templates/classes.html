@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/Styling/styling.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title id="hello">Course Work</title>
+  </head>
+  <body class="container" id="background">
+	<div>
+		<div class="cloud1"></div>
+		<div class="cloud2"> </div>
+		<div class="cloud3"> </div>
+
+    <div class="jumbotron text-center bg-white" style="margin-bottom:0px;" id="banner">
+        <div class="container">
+        <h1 style="font-size:5rem;">Course Work</h1>
+        </div>
+    </div>
+
+
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top">
+  <a class="navbar-brand" href="#">Classes</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+    <!-- Dropdown -->
+{% for module in moduleDict %}
+<!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="{{'#' + module['module']}}" id="navbardrop" data-toggle="dropdown">
+        {{module['module']}}
+      </a>
+      <div class="dropdown-menu">
+      {% for class in module['class_info']%}
+        <a class="dropdown-item" href="{{'#' + class['class_name']}}">{{class['class_name']}}</a>
+      {% endfor %}
+      </div>
+    </li>
+{% endfor %}
+    </ul>
+  </div>
+
+
+</nav>
+{% for module in moduleDict %}
+{% set rowloop = loop %}
+{% for class in module['class_info']%}
+{% if (rowloop.index + loop.index) %2  == 0: %}
+<div class='card bg-grey mx-auto border-0' id="{{class['class_name']}}" style="width:95%;">
+ {% endif %}
+{% if (rowloop.index + loop.index) %2  == 1: %}
+<div class='card bg-light mx-auto border-0' id="{{class['class_name']}}" style="width:95%;">
+ {% endif %}
+
+        <h2 class="card-title text-center" style="margin-top:2.5%">{{class['class_name']}}</h2>
+       <div class="card-body">
+         <div class="row">
+              <div class="col-md-6 col-sm-4">
+                   <img class="mx-auto d-block img-responsive" style="width:95%;" src="{{'/Images/' + class['image']}}">
+              </div>
+
+              <div class="col-md-6 col-sm-8">
+  <ul class="list-group list-group-flush align-middle">
+                  {% for description in class['descriptions']%}
+      <div class="h-25">
+          <li class="list-group-item border-0 m-# ">{{description}}</li>
+</div>
+                  {% endfor %}
+        </ul>
+              </div>
+          </div>
+
+      </div>
+</div>
+    {% endfor %}
+
+{% endfor %}
+
+	</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
+<script>
+
+
+
+</script>
