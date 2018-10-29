@@ -1,0 +1,22 @@
+module,class,title,description,image
+Boot Camp,Statistics,Kalmagorov Axioms,The axiomatic build up behind the theory of statistics,discrete_continuous_graph.jpg
+Boot Camp,Statistics,Probability Functions (discrete and continuous),Modeling simple situations with a probability space,discrete_continuous_graph.jpg
+Boot Camp,Statistics,Hypothesis Testing,Apply scientific reasoning to test results,discrete_continuous_graph.jpg
+Boot Camp,Linear Algebra,Matrix Algebra,Basic linear algebra operations - gaussian elimination and finding determinants",svd_example.png
+Boot Camp,Linear Algebra,Diagonal Matrices,Studying the application of diagonal matrices and why we can know the hat matrix is invertible,svd_example.png
+Boot Camp,Linear Algebra,SVD,Studied the algorithm which guarantees we can express any linear transformation with one scaling and two rotational matrices. Having an application in data compression,svd_example.png
+Boot Camp,Data Analytics,R,Learn the basics of the R language such as syntax and data type handling,Rplot.png
+Boot Camp,Data Analytics,Data Manipulation,Using the library dplyr we learned to shape data frames the way we want them,Rplot.png
+Boot Camp,Data Analytics,Plotting,Using the library ggplot we customized graphs to fit our data and make it visual,Rplot.png
+Module 1,Business Communication,Public Speaking,Practiced expressing technical ideas to an audience - tailoring our speeches to the audience,test.png
+Module 1,Business Communication,Office Best Practices,Wrote emails  succinctly and practiced deescalating conflict over email,test.png
+Module 1,Business Communication,Communication Tactics,Ways to encourage constructive feedback and different ways to structure a verbal message,test.png
+Module 1,Data Acquisition,Network Architecture ,Terminology and concepts related to how data is transferred over the internet,sentiment.png
+Module 1,Data Acquisition,Apis,Gathered data from sources that wanted to give us their data,sentiment.png
+Module 1,Data Acquisition,Web Scraping,Gathered data from sources that did not not want to give us their data,sentiment.png
+Module 1,Linear Regression,Model,Correct language and mechanics of the linear regression model from the parameters to appropriate interpretations,regression.png
+Module 1,Linear Regression,Tests,Used correct tests to test errors and make sure our assumptions were valid - find related intervals to key parameters,regression.png
+Module 1,Linear Regression,Advanced Methods,Modern techniques which sacrifice inference for performance such as lasso and ridge regression,regression.png
+Module 1,SQL,Select Statements,The fundamentals of what SQL is and how to write an efficient and readable query,sql.png
+Module 1,SQL,Advanced Querying,Modern augmentations to SQL such as window functions,sql.png
+Module 1,SQL,Making Data,Taking real life data from the San Francisco BART system - we cleaned the data from csv’s and generated a SQL table using python,sql.png
